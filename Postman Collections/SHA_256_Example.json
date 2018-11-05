@@ -19,7 +19,10 @@
               "",
               "var string_sha_256 = CryptoJS.SHA256(string_concat).toString();",
               "",
-              "console.log(string_sha_256);"
+              "console.log(string_sha_256);",
+              "",
+              "console.log('success!');",
+              "// hello?"
             ],
             "type": "text/javascript"
           }
