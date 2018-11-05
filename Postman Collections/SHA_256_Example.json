@@ -23,6 +23,16 @@
             ],
             "type": "text/javascript"
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "6464b9a7-959e-43a3-9a55-d6576f963e26",
+            "exec": [
+              "console.log('success!');"
+            ],
+            "type": "text/javascript"
+          }
         }
       ],
       "request": {
