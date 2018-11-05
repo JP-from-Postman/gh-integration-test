@@ -32,7 +32,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "https://localhost:1337/"
+        "url": "https://localhost:1337/?"
       },
       "response": []
     }
