@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "a103ef30-fa49-467b-9f38-90da5fdd9e57",
-    "name": "SHA 256 Example 11",
+    "name": "SHA 256 Example",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -40,12 +40,37 @@
       ],
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "asd",
+            "value": "asd",
+            "description": "asd",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": ""
         },
-        "url": "https://localhost:1337/"
+        "url": {
+          "raw": "https://localhost:1337/?asd=asd",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "1337",
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "asd",
+              "value": "asd",
+              "description": "asd",
+              "type": "text"
+            }
+          ]
+        }
       },
       "response": []
     }
