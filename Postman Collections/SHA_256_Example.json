@@ -50,7 +50,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n'test':1\n}"
+          "raw": "{\n\t\"test\":1\n}"
         },
         "url": {
           "raw": "https://localhost:1337/?asd=asd",
