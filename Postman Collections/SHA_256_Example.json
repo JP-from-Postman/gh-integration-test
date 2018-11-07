@@ -39,38 +39,13 @@
         }
       ],
       "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "asd",
-            "value": "asd",
-            "description": "asd",
-            "type": "text"
-          }
-        ],
+        "method": "GET",
+        "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\"test\":1\n}"
+          "raw": ""
         },
-        "url": {
-          "raw": "https://localhost:1337/?asd=asd",
-          "protocol": "https",
-          "host": [
-            "localhost"
-          ],
-          "port": "1337",
-          "path": [
-            ""
-          ],
-          "query": [
-            {
-              "key": "asd",
-              "value": "asd",
-              "equals": true,
-              "description": "asd"
-            }
-          ]
-        }
+        "url": "https://localhost:1337/"
       },
       "response": []
     }
