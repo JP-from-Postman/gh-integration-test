@@ -39,7 +39,7 @@
         }
       ],
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [
           {
             "key": "asd",
@@ -50,7 +50,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": ""
+          "raw": "{\n'test':1\n}"
         },
         "url": {
           "raw": "https://localhost:1337/?asd=asd",
@@ -66,8 +66,8 @@
             {
               "key": "asd",
               "value": "asd",
-              "description": "asd",
-              "type": "text"
+              "equals": true,
+              "description": "asd"
             }
           ]
         }
