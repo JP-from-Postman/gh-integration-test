@@ -1,8 +1,8 @@
 {
   "info": {
     "_postman_id": "025a4b9e-c9ac-4d67-86ce-c3c838d6407b",
-    "name": "Mock Test",
-    "description": "{{test}} hello",
+    "name": "Mock Test - Fork",
+    "description": "Updated with changes from fork\nBUMP",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
