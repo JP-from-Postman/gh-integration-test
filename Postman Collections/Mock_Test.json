@@ -53,7 +53,7 @@
                   "    pm.variables.set('counter',2);",
                   "}",
                   "",
-                  "pm.environment.set('abc_123')"
+                  "pm.environment.set('abc_123',false)"
                 ],
                 "type": "text/javascript"
               }
