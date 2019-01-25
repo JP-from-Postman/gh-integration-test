@@ -78,7 +78,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"jsonKey1\":\"a string\",\n\t\"jsonKey2\":\"also a string\"\n}"
+              "raw": "{\n    \"jsonKey1\": \"a string\",\n    \"jsonKey2\": \"also a string\"\n}"
             },
             "url": {
               "raw": "https://postman-echo.com/get?test=1235678",
