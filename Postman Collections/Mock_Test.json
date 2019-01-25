@@ -76,7 +76,10 @@
                 "type": "text"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"jsonKey1\":\"a string\",\n\t\"jsonKey2\":\"also a string\",\n\n}"
+            },
             "url": {
               "raw": "https://postman-echo.com/get?test=1235678",
               "protocol": "https",
