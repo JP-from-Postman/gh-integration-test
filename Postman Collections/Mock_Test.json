@@ -53,7 +53,7 @@
                   "    pm.variables.set('counter',2);",
                   "}",
                   "",
-                  "pm.environment.set('abc_123',false)"
+                  "pm.environment.set('abc_123',false);"
                 ],
                 "type": "text/javascript"
               }
@@ -84,7 +84,7 @@
               "raw": "{\n    \"jsonKey1\": \"a string\",\n    \"jsonKey2\": \"also a string\"\n}"
             },
             "url": {
-              "raw": "https://postman-echo.com/get?test=1235678",
+              "raw": "https://postman-echo.com/get?test={{abc_123}}",
               "protocol": "https",
               "host": [
                 "postman-echo",
@@ -96,7 +96,7 @@
               "query": [
                 {
                   "key": "test",
-                  "value": "1235678",
+                  "value": "{{abc_123}}",
                   "equals": true
                 }
               ]
