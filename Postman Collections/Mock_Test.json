@@ -37,7 +37,8 @@
                   "if(pm.variables.get('counter') > 0)",
                   "{",
                   "    postman.setNextRequest('Echo');",
-                  "}"
+                  "}",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -50,7 +51,9 @@
                   "if(!pm.variables.has('counter'))",
                   "{",
                   "    pm.variables.set('counter',2);",
-                  "}"
+                  "}",
+                  "",
+                  "pm.environment.set('abc_123')"
                 ],
                 "type": "text/javascript"
               }
