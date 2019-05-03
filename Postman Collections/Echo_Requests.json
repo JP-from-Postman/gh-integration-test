@@ -1,0 +1,64 @@
+{
+  "info": {
+    "_postman_id": "2be90115-b950-4c13-b14c-941f322ebe94",
+    "name": "Echo Requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "7dc06b3c-704a-4143-92b3-29f9593a7d77",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "3d6b3b4d-39a9-416f-9e62-a103f7e1f1c2",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "8edf6fa9-2338-4a34-a8a4-89e5d02d00f0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"token\":\"123456790\"\n}"
+        },
+        "url": "https://postman-echo.com/post",
+        "description": "Request body info:\n\n| Property      | Description |\n| ----------- | ----------- |\n| data      | some numbers       |\n| name   | a person        |"
+      },
+      "response": []
+    }
+  ]
+}
