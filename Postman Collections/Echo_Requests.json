@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "GET",
+      "name": "Request",
       "event": [
         {
           "listen": "prerequest",
@@ -58,7 +58,77 @@
         "url": "https://postman-echo.com/post",
         "description": "Request body info:\n\n| Property      | Description |\n| ----------- | ----------- |\n| data      | some numbers       |\n| name   | a person        |"
       },
-      "response": []
+      "response": [
+        {
+          "id": "5c3f4f18-c80a-4d56-800d-3c1942d3c2ea",
+          "name": "GET",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"token\":\"{{token}}\"\n}"
+            },
+            "url": "https://postman-echo.com/post"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 06 May 2019 17:40:31 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"248-7CuGY+shjls58L9ESjOzh8uAKNY\""
+            },
+            {
+              "key": "Server",
+              "value": "nginx"
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3A3Fb_tYGdfJj51jrOgLlzV6gsMPGIY4Ii.niXs5jBmAwyFIeUX0JgYdYGmvyV93KRShKqp2bfGhS0; Path=/; HttpOnly"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "Content-Length",
+              "value": "395"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"args\": {},\n    \"data\": {\n        \"token\": \"{{token}}\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"host\": \"postman-echo.com\",\n        \"content-length\": \"24\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, deflate\",\n        \"authorization\": \"Bearer {{token}}\",\n        \"cache-control\": \"no-cache\",\n        \"content-type\": \"application/json\",\n        \"cookie\": \"sails.sid=s%3AXvng-bYJq3J2JJ4f3GVauZ6bX6nJLCL_.mhs%2F1zpitVebt9YYEJ6ctjekyuCzVvCf3af8iq%2F1s48\",\n        \"postman-token\": \"9c72ae54-d820-4008-ba06-059769e85ae4\",\n        \"user-agent\": \"PostmanRuntime/7.11.0\",\n        \"x-forwarded-port\": \"443\"\n    },\n    \"json\": {\n        \"token\": \"{{token}}\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
+        }
+      ]
     }
   ]
 }
