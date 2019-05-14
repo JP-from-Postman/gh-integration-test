@@ -35,7 +35,10 @@
       },
       "request": {
         "auth": {
-          "type": "noauth"
+          "type": "oauth2",
+          "oauth2": {
+            "addTokenTo": "header"
+          }
         },
         "method": "POST",
         "header": [
@@ -46,8 +49,8 @@
             "type": "text"
           },
           {
-            "key": "Authorization",
-            "value": "Bearer {{token}}",
+            "key": "Account",
+            "value": "{{account_var}}",
             "type": "text"
           }
         ],
@@ -127,6 +130,75 @@
           "cookie": [],
           "responseTime": null,
           "body": "{\n    \"args\": {},\n    \"data\": {\n        \"token\": \"{{token}}\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"host\": \"postman-echo.com\",\n        \"content-length\": \"24\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, deflate\",\n        \"authorization\": \"Bearer {{token}}\",\n        \"cache-control\": \"no-cache\",\n        \"content-type\": \"application/json\",\n        \"cookie\": \"sails.sid=s%3AXvng-bYJq3J2JJ4f3GVauZ6bX6nJLCL_.mhs%2F1zpitVebt9YYEJ6ctjekyuCzVvCf3af8iq%2F1s48\",\n        \"postman-token\": \"9c72ae54-d820-4008-ba06-059769e85ae4\",\n        \"user-agent\": \"PostmanRuntime/7.11.0\",\n        \"x-forwarded-port\": \"443\"\n    },\n    \"json\": {\n        \"token\": \"{{token}}\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
+        },
+        {
+          "id": "163ebad3-eddb-465c-9bf8-66424e078861",
+          "name": "Request Example",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"token\":\"{{token}}\"\n}"
+            },
+            "url": "https://postman-echo.com/post"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 08 May 2019 17:54:03 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"244-k6ch7snfKBwiaSnMzA+RvA9+/ew\""
+            },
+            {
+              "key": "Server",
+              "value": "nginx"
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3AwJmBIbW2hvzLMORyfOqNyKoeHN4OPoix.SEqA1X935yjQwepZH4YNqwuhH7XZaGMrgIvX7nWY%2FdE; Path=/; HttpOnly"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "Content-Length",
+              "value": "392"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"args\": {},\n    \"data\": {\n        \"token\": \"{{token}}\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"host\": \"postman-echo.com\",\n        \"content-length\": \"24\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, deflate\",\n        \"authorization\": \"Bearer {{token}}\",\n        \"cache-control\": \"no-cache\",\n        \"content-type\": \"application/json\",\n        \"cookie\": \"sails.sid=s%3A3Fb_tYGdfJj51jrOgLlzV6gsMPGIY4Ii.niXs5jBmAwyFIeUX0JgYdYGmvyV93KRShKqp2bfGhS0\",\n        \"postman-token\": \"73d6a218-75d3-45c3-89f1-80280fe61f73\",\n        \"user-agent\": \"PostmanRuntime/7.11.0\",\n        \"x-forwarded-port\": \"443\"\n    },\n    \"json\": {\n        \"token\": \"{{token}}\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
         }
       ]
     }
