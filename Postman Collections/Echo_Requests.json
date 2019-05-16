@@ -35,28 +35,13 @@
       },
       "request": {
         "auth": {
-          "type": "oauth2",
-          "oauth2": {
-            "addTokenTo": "header"
-          }
+          "type": "noauth"
         },
         "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          },
-          {
-            "key": "Account",
-            "value": "{{account_var}}",
-            "type": "text"
-          }
-        ],
+        "header": [],
         "body": {
-          "mode": "raw",
-          "raw": "{\n\t\"token\":\"{{token}}\"\n}"
+          "mode": "formdata",
+          "formdata": []
         },
         "url": "https://postman-echo.com/post",
         "description": "Request body info:\n\n| Property      | Description |\n| ----------- | ----------- |\n| data      | some numbers       |\n| name   | a person        |"
