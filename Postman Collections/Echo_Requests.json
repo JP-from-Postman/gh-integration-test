@@ -41,16 +41,23 @@
         "header": [
           {
             "key": "Content-Type",
+            "name": "Content-Type",
             "value": "multipart/form-data",
-            "type": "text",
-            "disabled": true
+            "type": "text"
           }
         ],
         "body": {
           "mode": "formdata",
-          "formdata": []
+          "formdata": [
+            {
+              "key": "",
+              "type": "file",
+              "warning": "This file resides outside the working directory. Collaborators might not have the same file path.",
+              "src": "/Users/JPStrom/Support/Screenshots/app,settings-icon.png"
+            }
+          ]
         },
-        "url": "https://postman-echo.com/post",
+        "url": "{{echo_url}}/post",
         "description": "Request body info:\n\n| Property      | Description |\n| ----------- | ----------- |\n| data      | some numbers       |\n| name   | a person        |"
       },
       "response": [
