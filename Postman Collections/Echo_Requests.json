@@ -53,9 +53,7 @@
               "key": "",
               "type": "file",
               "warning": "This file resides outside the working directory. Collaborators might not have the same file path.",
-              "src": [
-                "/Users/JPStrom/Support/Screenshots/app,settings-icon.png"
-              ]
+              "src": "/Users/JPStrom/Support/Screenshots/app,settings-icon.png"
             }
           ]
         },
