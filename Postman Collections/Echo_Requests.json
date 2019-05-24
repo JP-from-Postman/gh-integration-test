@@ -2,6 +2,7 @@
   "info": {
     "_postman_id": "2be90115-b950-4c13-b14c-941f322ebe94",
     "name": "Echo Requests",
+    "description": "![alt text](https://www.getpostman.com/img/v2/integrations/newman-logo.svg \"Newman Logo\")",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -200,6 +201,28 @@
           "body": "{\n    \"args\": {},\n    \"data\": {\n        \"token\": \"{{token}}\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"host\": \"postman-echo.com\",\n        \"content-length\": \"24\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, deflate\",\n        \"authorization\": \"Bearer {{token}}\",\n        \"cache-control\": \"no-cache\",\n        \"content-type\": \"application/json\",\n        \"cookie\": \"sails.sid=s%3A3Fb_tYGdfJj51jrOgLlzV6gsMPGIY4Ii.niXs5jBmAwyFIeUX0JgYdYGmvyV93KRShKqp2bfGhS0\",\n        \"postman-token\": \"73d6a218-75d3-45c3-89f1-80280fe61f73\",\n        \"user-agent\": \"PostmanRuntime/7.11.0\",\n        \"x-forwarded-port\": \"443\"\n    },\n    \"json\": {\n        \"token\": \"{{token}}\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
         }
       ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "5b242d06-4b93-4b0a-bd3b-be18abe9eafd",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "6c35f11f-5e08-497d-a14b-4d41075342a4",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
     }
   ]
 }
