@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "2be90115-b950-4c13-b14c-941f322ebe94",
     "name": "Echo Requests",
-    "description": "![alt text](https://www.getpostman.com/img/v2/integrations/newman-logo.svg \"Newman Logo\")",
+    "description": "![alt text](https://s3.amazonaws.com/web-artefacts/newman-128.png \"Newman Logo\")",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -58,7 +58,7 @@
             }
           ]
         },
-        "url": "{{echo_url}}/post",
+        "url": "{{echo_url}}post",
         "description": "Request body info:\n\n| Property      | Description |\n| ----------- | ----------- |\n| data      | some numbers       |\n| name   | a person        |"
       },
       "response": [
