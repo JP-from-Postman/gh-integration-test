@@ -15,7 +15,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://postman-echo.com/get?test=1&test2=2&test3=3",
+          "raw": "https://postman-echo.com/get?test=1",
           "protocol": "https",
           "host": [
             "postman-echo",
@@ -27,15 +27,8 @@
           "query": [
             {
               "key": "test",
-              "value": "1"
-            },
-            {
-              "key": "test2",
-              "value": "2"
-            },
-            {
-              "key": "test3",
-              "value": "3"
+              "value": "1",
+              "type": "text"
             }
           ]
         }
