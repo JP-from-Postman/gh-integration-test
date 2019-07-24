@@ -35,8 +35,7 @@
             },
             {
               "key": "test3",
-              "value": "3",
-              "type": "text"
+              "value": "3"
             }
           ]
         }
